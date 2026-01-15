@@ -1,0 +1,15 @@
+import pyautogui as pya
+import time
+
+pya.PAUSE = 0.5
+
+pya.hotkey('win', 'r') 
+pya.write('%temp%')
+pya.press('enter')
+time.sleep(2)
+
+pya.hotkey('ctrl', 'a')
+pya.press('delete')
+pya.hotkey('alt', 'f4')
+pya.hotkey('alt', 'f4')
+# Esse script abre a pasta de arquivos temporários do Windows e apaga todo o conteúdo dela.
